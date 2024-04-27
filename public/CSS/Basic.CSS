@@ -1,0 +1,252 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --blue1: rgb(129, 209, 230);
+    --blue2: rgb(182, 208, 255);
+    --blue3: rgb(53, 134, 255);
+    --green1: rgb(42, 221, 167);
+    --green2: rgb(141, 82, 250);
+    --brown: rgb(156, 106, 31);
+    --helptext: rgba(68, 68, 68, 0.7);
+    --errortext: rgb(255, 0, 0)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    height: fit-content;
+    font-family: Arial;
+    padding-top: 75px;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0px;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.upbutton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: rgba(169, 238, 255, 0.4);
+    border: none;
+    border-radius: 10px;
+    visibility: hidden;
+    border: 1px solid black;
+}
+
+.upbutton:hover {
+    background-color: rgba(150, 150, 150, 0.4);
+    color: white;
+}
+
+.scrollup {
+    visibility: visible;
+}
+
+
+/*Header*/
+.headerdiv {
+    background-color: var(--white);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+}
+
+.leftheaderdiv {
+    display: flex;
+    flex: 1;
+}
+
+.headericonimg {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.middleheaderdiv {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.titlediv {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.rightheaderdiv {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+}
+
+.loginbuttondiv {
+    position: relative;
+    margin-right: 20px;
+    font-size: 40px;
+    transition: 100ms;
+    color: var(--blue3);
+}
+
+.hoverlogindiv {
+    position: absolute;
+    color: var(--white);
+    font-size: 15px;
+    background-color: var(--helptext);
+    border-radius: 5px;
+    padding: 2px;
+    visibility: hidden;
+    width: 50px;
+    left: -10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.loginbuttondiv:hover .hoverlogindiv {
+    visibility: visible;
+}
+
+.loginbuttondiv:hover {
+    cursor: pointer;
+    color: var(--green2);
+}
+
+.secondheaderdiv {
+    background-color: var(--blue2);
+    position: fixed;
+    top: 75px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.secondheaderdiv a {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.secondheaderdiv a:hover {
+    color: var(--blue3);
+}
+
+.cartIcon {
+    font-size: 35px;
+    color: var(--blue3);
+    padding: 15px;
+    transition: 500ms;
+    border-radius: 100%;
+    position: relative;
+}
+
+.hoverCart {
+    position: absolute;
+    color: var(--white);
+    font-size: 15px;
+    background-color: var(--helptext);
+    border-radius: 5px;
+    padding: 2px;
+    visibility: hidden;
+    width: 95px;
+    left: -15px;
+}
+
+.cartIcon:hover .hoverCart {
+    visibility: visible;
+}
+
+.cartquantity {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    background-color: var(--blue3);
+    border-radius: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    left: 27px;
+    border: 1px solid var(--blue2);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*Header*/
+.notheaderdiv {
+    width: 100%;
+}
+
+/*Footer*/
+.bottominfodiv {
+    background-color: var(--brown);
+    height: 200px;
+    display: flex;
+    flex: 1;
+    padding: 50px 200px;
+    border-bottom: 1px solid var(--white);
+}
+
+.footerinfodiv,
+.footergeneraldiv,
+.footercontactdiv {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--white);
+    border-left: 1px solid var(--white);
+    align-items: center;
+    flex: 1;
+}
+
+.footerinfodiv a,
+.footergeneraldiv a {
+    padding: 7px;
+}
+
+.footerinfodiv a:hover,
+.footergeneraldiv a:hover {
+    text-decoration: underline;
+}
+
+.footercontactdiv p {
+    margin: 7px;
+}
+
+.footerbottomdiv {
+    height: 50px;
+    display: flex;
+    flex: 1;
+    background-color: var(--blue2);
+    align-items: center;
+    justify-content: center;
+}
+
+/*Footer*/

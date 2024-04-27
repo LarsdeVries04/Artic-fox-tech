@@ -1,0 +1,82 @@
+body{
+    padding-top: 125px;
+
+}
+.bodysectiondiv{
+    padding: 2% 20% 0% 20%;
+    display: flex;
+    height: 82vh;
+}
+.navbardiv{
+    padding-right: 20px;
+    border-right: 1px black solid ;
+}
+.navbartitlediv{
+    font-weight: 600;
+}
+.navbarlinksdiv{
+    min-width: 120px;
+}
+.navbarlinksdiv p{
+    margin: 10px;
+    padding-left: 5px;
+    display: flex;
+    cursor: pointer;
+}
+.navbarlinksdiv p:hover{
+    text-decoration: underline;
+}
+.logoutBTN{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+}
+.logoutBTN:hover{
+    text-decoration: underline;
+}
+.activelink{
+    border-left: 5px var(--green2) solid;
+    border-radius: 5px;
+    color: var(--blue3);
+}
+.accinfodiv{
+    width:100%;
+    padding-left: 10px;
+}
+.username{
+    font-size: 40px;
+}
+
+.Profileinfotitle{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.Profileinfoform{
+    padding: 0px 20% 0px 20%;
+}
+.profileinfoinput input,.Addressinfoinput input{
+    width: 98%;
+    padding: 5px 0px 5px 5px;
+    margin-bottom: 10px;
+}
+.editBTNdiv{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 10px;
+}
+.editBTN{
+    background-color: var(--blue1);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.editBTN:hover{
+    background-color: var(--green2);
+}
