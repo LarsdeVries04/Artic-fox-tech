@@ -1,0 +1,49 @@
+.headerdiv{
+    background-color: var(--brown);
+    }
+    .leftheaderdiv{
+        margin-left: 10px;
+    }
+    .titlediv{
+        margin-left: 30px;
+    }
+    .middlediv{
+        text-decoration: underline;
+    }
+    .menuopener{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuopener:hover{
+        cursor: pointer;
+        transition: 100ms;
+    }
+    .menudiv{
+        position: fixed;
+        background-color: var(--blue2);
+        top: 75px;
+        bottom: 0px;
+        width: 200px;
+        left: -200px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.616);
+        transition: 100ms;
+    }
+    .menudiv a{
+        display: flex;
+        padding: 10px;
+    }
+    .menudiv a i{
+        color: var(--brown);
+        margin-right: 4px;
+    }
+    .menudiv a:hover{
+        color: var(--brown);
+    }
+    .menumover{
+        left: 0px;
+    }
+    .menuopenermover{
+        rotate: -90deg;
+    }

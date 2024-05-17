@@ -1,0 +1,118 @@
+.bodydiv{
+    padding: 100px 15%;
+    display: flex;
+}
+.filterdiv{
+    width: 15%;
+    margin-right: 10px;
+}
+.webshopdiv{
+    display: grid;
+    width: 100%;
+}
+.articlediv{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;    
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+}
+.articleimage{
+    height: 225px;
+    width: 350px;
+    border-radius: 5px;
+    object-fit:cover;
+}
+.articleimage:hover{
+opacity: 0.8;
+}
+.middleboxdiv{
+    min-width: 250px;
+}
+.Articlenamediv{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.Articlenamediv:hover{
+    text-decoration: underline;
+}
+.Articlecategorydiv{
+    font-style: italic;
+    margin: 20px 0px;
+}
+.instockdiv{
+    color: var(--green1);
+    border: 1px solid var(--green1);
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
+.outofstockdiv{
+    color: var(--errortext);
+    border: 2px solid var(--errortext);
+    padding: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    font-weight: 600;
+}
+.deliverytimediv{
+    color: var(--green1);
+}
+.rightboxdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.articlepricediv{
+    color: var(--price_discount);
+    font-weight: 800;
+    font-size: 25px;
+}
+.topdiv{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    
+}
+.discountdiv{
+    background-color: var(--price_discount);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.originalpricediv{
+    color: gray;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.symboldiv{
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+}
+.shoppingcartdiv{
+    background-color: var(--blue3);
+  padding: 5px 100px;
+    border-radius: 10px;
+    color: var(--white);
+    margin-right: 10px;
+}
+.shoppingcartdiv:hover{
+    background-color: var(--green2);
+}
+.likediv{
+    padding: 5px 10px;
+    color: var(--blue3);
+    border-radius: 5px;
+    border: 2px solid var(--white)
+}
+.likediv:hover{
+    border: 2px solid var(--blue3)
+}

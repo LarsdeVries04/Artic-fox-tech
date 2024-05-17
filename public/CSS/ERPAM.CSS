@@ -1,0 +1,42 @@
+.bodydiv{
+    
+    height: 100%; 
+    border: 1px solid black;
+    flex: 1;
+    margin: 50px 200px;
+}
+.tabelname{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    font-weight: 600;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 2px 5px;
+}
+.linkdiv{
+    display: flex;
+    flex-direction: column;
+}
+.articlediv{
+    display: grid;
+    grid-template-columns: repeat(4, 25%); 
+    border-bottom: 1px solid gray;
+    position: relative;
+    height: 30px;
+    align-items: center;
+    padding: 0px 5px;
+}
+.ahrefa{
+    position:absolute;
+    right: 0px;
+    padding: 1px 5px 0px 0px;
+}
+.noarticlesdiv{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 20px 0px;
+    align-items: center;
+    font-size: 25px;
+}
+
+

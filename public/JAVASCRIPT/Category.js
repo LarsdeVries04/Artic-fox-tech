@@ -1,0 +1,16 @@
+export const category =[
+    {name: "GPU's"},
+    {name: "CPU's"},
+    {name: "Motherboards"},
+    {name: "Processors"},
+    {name: "RAM-memory"},
+    {name: "SSD"},
+    {name: "Cooling"},
+    {name: "Cases"},
+    {name: "Monotors"},
+    {name: "Webcams"},
+    {name: "Sound systemns"},
+    {name: "Kabels"},
+    {name: "Mouse"},
+    {name: "Keyboards"},
+];

@@ -1,0 +1,127 @@
+.bodydiv{
+    padding: 100px 20%;
+    display: flex;
+}
+.articleboxdiv{
+    display: flex;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+.backbutton{
+    display: flex;
+    border: 1px solid var(--blue3);
+    color:  var(--blue3);
+    border-radius: 2px;
+    max-width: fit-content;
+    padding: 5px 12px;
+    cursor: pointer;
+    margin: 5px 0px 10px 10px;
+    font-weight: 600;
+}
+.backbutton:hover{
+    color: white;
+    background-color: var(--blue3);
+}
+.articletitlediv{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.middlebox{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.artimage{
+    height: 450px;
+    width: 700px;
+    border-radius: 5px;
+    object-fit:cover;
+}
+.rightboxdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.articlepricediv{
+    color: var(--price_discount);
+    font-weight: 800;
+    font-size: 35px;
+}
+.discountdiv{
+    background-color: var(--price_discount);
+    color: rgb(255, 255, 255);
+    padding: 10px 7px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+.originalpricediv{
+    margin-top: 15px;
+    color: gray;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+.Articlecategorydiv{
+    font-style: italic;
+    font-size: 20px;
+}
+.instockdiv{    
+    display: flex;
+    justify-content: center;
+    color: var(--green1);
+    border: 1px solid var(--green1);
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 70px;
+    font-size: 20px;
+}
+.outofstockdiv{
+    color: var(--errortext);
+    border: 2px solid var(--errortext);
+    padding: 5px;
+    margin-bottom: 10px;
+    max-width: fit-content;
+    font-weight: 600;
+    font-size: 20px;
+}
+.deliverytimediv{
+    color: var(--green1);
+    font-size: 20px;
+}
+.symboldiv{
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.shoppingcartdiv{
+    cursor: pointer;
+    background-color: var(--blue3);
+    padding: 10px 120px;
+    border-radius: 15px;
+    color: var(--white);
+    margin-right: 10px;
+}
+.shoppingcartdiv:hover{
+    background-color: var(--green2);
+}
+.likediv{
+    cursor: pointer;
+    padding: 10px 15px;
+    color: var(--blue3);
+    border-radius: 5px;
+    border: 2px solid var(--white)
+}
+.likediv:hover{
+    border: 2px solid var(--blue3)
+}
+
+.titledescription{
+    font-size: 30px;
+    font-weight: 600;
+}

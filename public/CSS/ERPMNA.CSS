@@ -1,0 +1,197 @@
+.bodydiv{
+    display: flex;
+    height: 100%; 
+    border: 1px solid black;
+    flex: 1;
+    margin: 50px 200px;
+}
+form{
+    padding: 10px;
+    width: 100%;
+}
+.Addarticletitle{
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.formbody{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ column-gap: 20px;
+}
+.leftbodydiv div{
+    display: flex;
+   justify-content: space-between;
+    margin: 20px 0px;
+}
+.leftbodydiv div label{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content:space-between;
+}
+.leftbodydiv div input{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.eurosign{
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-right: none;
+}
+.presentagesign{
+    padding: 10px 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-right: none;
+}
+.stocksign{
+    padding: 9px 6px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-right: none;
+}
+#Astock, #Adiscount, #Asaleprice, #Acostprice{
+    width: 25%;
+    margin-right: 41%;
+    border-left: none;
+}
+.rightbodydiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Imgfile{
+    display: none;
+}
+.labelimage{
+    cursor: pointer;
+    border: 1px solid black;
+    color: white;
+    border-radius: 2px;
+    padding: 3px 10px;
+    font-size: 20px;
+    background-color: var(--brown);
+}
+.imagediv{
+    display: flex;
+    justify-content: end;
+}
+.articleimage{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    object-fit: contain;
+}
+.APD{
+    width: 100%;
+    height: 200px;
+    overflow-wrap: normal;
+}
+.bottombodydiv{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.SaveBTN{
+    background-color: var(--blue3);
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.succesmessagediv{
+    color: white;
+    font-size: 20px;
+    border: 1px var(--blue3) solid;
+    border-radius: 5px;
+    background-color:var(--blue1);
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.succesvisable{
+    visibility: visible;
+}
+.errormessagediv{
+    font-size: 20px;
+    border: 1px var(--errortext) solid;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.315);
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.errorvisable{
+    visibility: visible;
+}
+
+
+/*active slider*/
+.activediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activespan{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+/* Rounded sliders */
+/* .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } */
+  /* Rounded sliders */
+/*active slider*/

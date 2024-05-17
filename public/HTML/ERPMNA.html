@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create article | Artic Fox Tech</title>
+    <link rel="icon" type="image/x-icon" href="/images/New Project.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Basic.CSS" />
+    <link rel="stylesheet" href="/CSS/ERPMNA.CSS" />
+    <link rel="stylesheet" href="/CSS/BasicERP.CSS">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <script
+  src="https://kit.fontawesome.com/885a67e978.js"
+  crossorigin="anonymous"
+></script>
+</head>
+<body>
+  <div class="headerdiv">
+    <div class="leftheaderdiv">
+      <div class="menuopener"><i class="fa-solid fa-bars"></i></div>
+        <div class="titlediv"><a href="/ERP">Artic Fox Tech ERP</a></div>
+    </div>
+    <div class="middlediv"><a href="/">Back to website</a></div>
+    <div class="rightheaderdiv"><a href="/Login"><div class="loginbuttondiv"><i class="fa-solid fa-user"></i><div class="hoverlogindiv">Log in</div></div></a></div>
+</div>
+<div class="menudiv">
+  <a href="/ERPMNA"><i class="fa-solid fa-file-circle-plus"></i>Make new article</a>
+  <a href="/ERPAM"><i class="fa-solid fa-tag"></i>Article maintenance</a>
+  <a href=""><i class="fa-solid fa-percent"></i>Promotions</a>
+  <a href=""><i class="fa-solid fa-boxes-stacked"></i>Stock</a>
+  <a href=""><i class="fa-solid fa-envelope"></i>Sales orders</a>
+  <a href=""><i class="fa-solid fa-inbox"></i>purchase orders</a>
+  <a href=""><i class="fa-solid fa-chart-line"></i>Statistics</a>
+  <a href=""><i class="fa-solid fa-address-book"></i>Suppliers</a>
+  <a href=""><i class="fa-solid fa-boxes-packing"></i>record packing slip</a>
+</div>
+<div class="bodydiv">
+
+ <form action="Addarticleform" method="POST" class="Addarticleform">
+    <div class="Addarticletitle"><span>Add article</span> 
+        <div class="activediv"><span class="activespan">Active</span><label class="switch" for="Aactive"><input checked type="checkbox" name="Aactive" id="Aactive"><span class="slider round"></span></label></div>
+    </div>
+    <div class="formbody">
+    <div class="leftbodydiv">
+    <div class="artiddiv">
+    </div>
+    <div>
+        <label for="Aname">Article name:</label>
+        <input type="text" id="Aname" name="Aname" class="Aname">
+    </div> 
+    <div>
+        <label for="Aproducttype"> Product type:</label>
+        <input type="text" id="Aproducttype" name="Aproducttype" class="Aproducttype">
+    </div> 
+    <div>
+        <label for="Acategory"> Category:</label>
+        <input list="Acategorylist" id="Acategory" name="Acategory" class="Acategory">
+        <datalist id="Acategorylist" class="datalistcategory" >
+        </datalist>
+    </div> 
+    <div>
+        <label for="Acostprice"> Cost price:<span class="eurosign">$</span></label>
+        <input  type="number" id="Acostprice" name="Acostprice" class="Acostprice input-number" step="0.01" min="0">
+    </div> 
+    <div>
+        <label for="Asaleprice"> Sales price:<span class="eurosign">$</span></label>
+        <input type="number" id="Asaleprice" name="Asaleprice" class="Asaleprice" step="0.01" min="0">
+    </div> 
+    <div>
+        <label for="Adiscount"> Discount: <span class="presentagesign">%</span></label>
+        <input type="number" id="Adiscount" name="Adiscount" class="Adiscount" max="100" step="1" min="0">
+    </div> 
+    <div>
+        <label for="Astock"> Stock: <span class="stocksign"><i class="fa-solid fa-boxes-stacked"></i></span></label>
+        <input type="number" id="Astock" name="Astock" class="Astock" min="0">
+    </div> </div>
+    <div class="rightbodydiv">
+    <div>
+        <label class="labelimage" for="Imgfile">Upload image</label>
+        <input type="file" name="Imgfile" accept="image/jpeg" id="Imgfile" class="Imgfile">
+        <div class="imagediv"></div>
+    </div>
+    <div>
+        <label for="APD">Article discription:</label>
+        <textarea type="text" id="APD" name="APD" class="APD"></textarea>
+    </div></div></div>
+<div class="bottombodydiv"><div class="errormessagediv"></div><div class="succesmessagediv"></div><button id="SaveBTN" class="SaveBTN" type="submit">Save</button></div>
+</form>
+</div>
+<script type="module" src="/JAVASCRIPT/ERPMNA.js"></script>
+</body>
+</html> 
